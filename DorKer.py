@@ -101,7 +101,6 @@ while True:
 		nl = 0
 		dork = str(lista [nl])
 		i = 1
-		print len(lista)
 		while True:
 			
 			if "['" in dork:
@@ -111,7 +110,7 @@ while True:
 				dork=dork.replace(" ", "+")
 
 			def finder(dork):
-				print (Fore.YELLOW+"Buscando el Dorck "+dork)
+				print (Fore.YELLOW+"Buscando el Dork "+dork)
 				first = 1
 				while first<=500:
 					response = urllib2.urlopen("http://www.bing.com/search?q={}&first={}".format(dork, first))
@@ -125,7 +124,7 @@ while True:
 						sqlscann.scan(vict)
 						first = first + 10
 			def printer(dork):
-				print (Fore.YELLOW+"Buscando el Dorck "+dork)
+				print (Fore.YELLOW+"Buscando el Dork "+dork)
 				first = 1
 				while first<=500:
 					response = urllib2.urlopen("http://www.bing.com/search?q={}&first={}".format(dork, first))
